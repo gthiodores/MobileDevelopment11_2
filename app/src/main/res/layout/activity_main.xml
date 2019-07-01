@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_instruksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tekan tombol untuk memulai lagu!"
+        android:layout_margin="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_lagu1"
+        android:text="Lagu 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/text_instruksi"
+        app:layout_constraintTop_toBottomOf="@id/text_instruksi"/>
+
+    <Button
+        android:id="@+id/button_lagu2"
+        android:text="Lagu 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/button_lagu1"
+        app:layout_constraintTop_toBottomOf="@id/text_instruksi"/>
+
+</android.support.constraint.ConstraintLayout>
